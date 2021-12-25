@@ -9,6 +9,7 @@ let progress =document.getElementById("progress")
 let total_duration =document.getElementById("duration")
 let current_Time = document.getElementById("current_time")
 let bc =document.getElementById("ma")
+
 const progress_div= document.getElementById("progress_div")
 
 const songs = [
@@ -220,14 +221,17 @@ const  PauseMusic= ()=>{
     img.classList.remove("anime")
     bc.classList.remove("ba")
 };
-play.addEventListener("click", ()=>{
+
+play.addEventListener( "click", ()=>{
 if(isPlaying){
     PauseMusic();
 
 }else{
     PlayMusic();
 }
+
 })
+
 // changing music data
 const loadSong =(songs)=>{
 title.textContent = songs.title;
@@ -291,4 +295,6 @@ let tot_currentTime = `${min_currentTime}:${sec_currentTime}`;
   music.addEventListener("ended" , nextSong)
 next.addEventListener("click", nextSong);
 prev.addEventListener("click", prevSong);
+ 
+
 
