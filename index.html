@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title > Music Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main  " id="ma">
+        <div class="music_container">
+ 
+            <div class="img_container">
+                <img src="./images/cover12.jpg" alt=" ">
+            </div>
+            <audio src="./music/music19.mp3"></audio>
+            <h2 id="title">is Qudar</h2>
+            <h3 id="artist">Darshan rawal</h3>
+            <!-- progress bar -->
+            <div class="progress_container" id="progress_container">
+<div class="progress_duration_meter">
+    <div id="current_time">0:00</div>
+    <div id="duration"> 3:50</div>
+</div>
+<div class="progress_div" id="progress_div">
+    <div id="progress" class="progress"></div>
+</div>
+
+            </div>
+<!-- controls -->
+<div class="music_controls">
+    <i class="fas fa-backward  prev " id="prev"></i>
+    <i class="fas fa-play main_button" id="play"></i>
+    <i class="fas fa-forward  prev" id="next"></i>
+
+</div>
+        </div>
+    </div>
+
+
+
+
+    <script src="./index.js"></script>
+</body>
+</html>

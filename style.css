@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@1,200&family=Lato:ital,wght@1,300&family=Roboto+Slab:wght@300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+
+}
+.main{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+
+
+
+}
+.ba{
+background: url(./ZOHV.gif.txt);
+
+}
+.sa{
+    background: url(./Nt6v.gif.txt);
+}
+/* @keyframes changeBg {
+    0%{background-color: rgba(255, 255, 255, 0.945);}
+    10%{background-color: rgb(55, 209, 9);}
+    20%{background-color: rgb(216, 8, 8);}
+    30%{background-color: rgb(30, 101, 255);}
+    40%{background-color: rgb(255, 30, 30);}
+    50%{background-color: rgb(255, 11, 11);}
+    60%{background-color: rgb(206, 15, 206);}
+    70%{background-color: rgb(110, 226, 162);}
+    80%{background-color: rgb(160, 190, 24);}
+    90%{background-color: rgb(9, 219, 219);}
+    100%{background-color: rgb(70, 255, 23);}
+} */
+.music_container{
+    height: 50rem;
+    width: 30rem;
+    background-color:white;
+    text-align: center;
+box-shadow: .1rem  .1rem  2.6rem 0 rgb(0,0,0.2) ;
+    border-radius: 5%;
+    padding: 3rem;
+    /* border: .1rem solid black; */
+}
+.music_container #title{
+    text-transform: capitalize;
+    letter-spacing: 0.1rem;
+    word-spacing: 0.1rem;
+    color: black;
+    margin: 2rem 0 0.5rem 0 ;
+    margin-top: 3rem;
+    font-size: 2.2rem;
+    font-weight: bolder;
+    text-shadow: rgb(0, 0, 0) 1rem 0 4rem;
+}
+.music_container #artist{
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+    /* margin-top: 2rem; */
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+    word-spacing: 0.1rem;
+    font-weight: lighter;
+    text-shadow: rgb(255, 255, 255) 2rem 0 6rem;
+
+}
+.img_container{
+    height: 30rem;
+    width: 30rem;
+    margin: auto;
+    /* border: .1rem solid black; */
+    border-radius: 50%;
+    box-shadow: 0rem 0rem 1.5rem 0rem rgba(0, 0, 0, 0.822);
+
+    
+}
+img{
+height: 100%;
+width: 100%;
+object-fit: cover;
+border-radius: 50%;
+}
+.music_controls{
+    width: 20rem;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    font-size: 1.9rem;
+    margin-top: 1rem;
+    align-items: center;
+    cursor: pointer;
+
+    
+}
+
+.music_controls .main_button{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    font-size: 1.4rem;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border: 2px solid black;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    box-shadow: 0 0 1rem 0;
+
+}
+.main_button:hover{
+ background-color: white;
+ color: black;
+}
+.anime{
+    animation: rotate 8s linear infinite ;
+    
+}
+@keyframes rotate {
+ from{
+     transform: rotate(0deg);
+}
+to{
+    transform: rotate(360deg);
+}
+
+}
+.prev{
+  color: black;
+transition-duration: 800ms;
+height: 5rem;
+width: 5rem;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 50%;
+}
+.prev:hover{
+    color: rgb(0, 0, 0);
+    box-shadow: 0 0 .3rem 0 inset;
+    border-radius: 50%;
+}
+
+.progress_container{
+    width: 100%;
+    height: auto;
+    padding: 1rem 0;
+    margin-top: 1rem;
+}
+.progress_div{
+    width: 100%;
+    height: .5rem;
+    border-radius: 4rem;
+    position: relative;
+    margin-top: .5rem;
+    cursor: pointer;
+    appearance: none;
+    box-shadow: 0 0 0.2rem 0;
+
+}
+.progress{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1%;
+    height: 100%;
+    background-color: black;
+    border-radius: 4rem;
+    cursor: pointer;
+    appearance: none;
+    box-shadow: 0 0 0.2rem 0;
+}
+
+.progress_duration_meter{
+    display: flex;
+   justify-content: space-between;
+   font-size: 1.2rem;
+}
