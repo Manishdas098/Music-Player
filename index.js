@@ -213,7 +213,7 @@ const PlayMusic = ()=>{
 bc.classList.add("ba")
     
 };
-// plause button
+// pause button
 const  PauseMusic= ()=>{
     music.pause();
     isPlaying= false;
@@ -257,13 +257,13 @@ const prevSong = () => {
   
     PlayMusic();
 };
-// update progress bat
+// update progress bar
   music.addEventListener("timeupdate" , (event) =>{
       const {currentTime , duration} =event.srcElement;
      
       let progress_time =(currentTime / duration) *100
       progress.style.width=`${progress_time}%`;
-    //   update duratin 
+    //   update duration
 
 let min_duration = Math.floor(duration/60);
 let sec_duration = Math.floor(duration % 60);
@@ -274,7 +274,7 @@ let tot_duration = `${min_duration}:${sec_duration}`;
 if(duration){
     total_duration.textContent = `${tot_duration}`;
 }
-// update sec
+// update seconds
 let min_currentTime = Math.floor(currentTime/60);
 let sec_currentTime = Math.floor(currentTime % 60);
 if (sec_currentTime < 10){
