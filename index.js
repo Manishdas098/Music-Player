@@ -1,3 +1,4 @@
+alert("Hello Aayush Parker")
 const img = document.querySelector("img")
 const music = document.querySelector("audio");
 const play = document.getElementById("play");
